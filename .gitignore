@@ -1,4 +1,4 @@
-*.vscode
+.vscode/
 
 ### Go ###
 # Binaries for programs and plugins
@@ -20,5 +20,7 @@
 ### Go Patch ###
 /vendor/
 /Godeps/
+
+.DS_Store
 
 # End of https://www.gitignore.io/api/go
