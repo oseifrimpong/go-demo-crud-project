@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/obed/demo-project/config"
-	"github.com/obed/demo-project/models"
+	"github.com/obed/demo-project/userAuth/config"
+	"github.com/obed/demo-project/userAuth/model"
 
 	"github.com/gin-gonic/gin"
 	_ "github.com/jinzhu/gorm/dialects/postgres"

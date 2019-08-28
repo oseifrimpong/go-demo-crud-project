@@ -3,7 +3,7 @@ package config
 import (
 	"fmt"
 
-	"github.com/obed/demo-project/models"
+	model "github.com/obed/demo-project/userAuth/model"
 
 	"github.com/jinzhu/gorm"
 	// Not needed for import.
@@ -12,7 +12,7 @@ import (
 
 // Object used to access database tables and executing queries
 var Database *gorm.DB
-var user models.User
+var user model.User
 
 func init() {
 	var err error
