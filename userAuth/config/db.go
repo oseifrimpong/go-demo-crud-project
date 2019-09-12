@@ -16,15 +16,16 @@ var user model.User
 
 func init() {
 	var err error
+	// TODO: Remove sensitive data tomorrow
 	Database, err = gorm.Open("postgres", "host=localhost port=5432 user=oseifrimpong dbname=godemo_db password=Frimpong.com20 sslmode=disable")
-
 	if err != nil {
 		panic(err)
 	}
-
 	// set this to 'true' to see sql logs
 	Database.LogMode(true)
 	Database.AutoMigrate(&user)
-
 	fmt.Println("Database connection successful.")
+}
+func CloseDB() {
+	defer Database.Close()
 }
