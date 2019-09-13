@@ -22,7 +22,6 @@ func newPostgres(c *Config) (*gorm.DB, error) {
 		c.DB.Postgres.UserName,
 		c.DB.Postgres.Password,
 		c.DB.Postgres.Database)
-
 	db, err := gorm.Open("postgres", psqlInfo)
 	if err != nil {
 		return nil, err

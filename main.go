@@ -1,5 +1,17 @@
 package main
 
+//TODO:
+/*
+	initialize zap for logs in main and initialize
+	Add tests
+	login
+	docker
+
+Consume data from external API
+
+	Use IMROC package for API consumption
+*/
+
 import (
 
 	// "go.uber.org/zap"
